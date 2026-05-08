@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome to Kyn</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style type="text/css">
+    body {
+      margin: 0;
+      padding: 0;
+      min-width: 100%;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      background-color: #FAFAFA;
+      color: #222222;
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.25;
+      margin-top: 0;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
+
+    table td {
+      vertical-align: top;
+    }
+
+    .email-wrapper {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .email-header {
+      background-color: #0070f3;
+      padding: 24px;
+      color: #ffffff;
+    }
+
+    .email-body {
+      padding: 24px;
+      background-color: #ffffff;
+    }
+
+    .email-footer {
+      background-color: #f6f6f6;
+      padding: 24px;
+      text-align: center;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #0070f3;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+    <h2>Congratulations, <%= firstName %>! 🎉</h2>
+
+    <p>Your offer to help has been accepted for the following request:</p>
+    <p><strong>"<%= requestTitle %>"</strong></p>
+
+    <p>Please log in to the Kyn app to see the details and get started.</p>
+
+    <p>Thank you for spreading kindness 🌟</p>
+
+    <hr />
+    <p style="font-size: 12px; color: gray;">
+      If you did not respond to this request, please contact support immediately.
+    </p>
+  </body>
+</body>
+</html>
