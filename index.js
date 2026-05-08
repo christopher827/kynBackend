@@ -9,12 +9,12 @@ const connectDB = require("./db/database");
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://kyn-ui.vercel.app",
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
 );
-
+//https://kyn-ui.vercel.app/
 app.use(express.json({ limit: "100mb" }));
 app.use(cookieParser());
 app.use("/", express.static("uploads"));
