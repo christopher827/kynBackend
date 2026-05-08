@@ -55,8 +55,8 @@ app.all(/.*/, (req, res) => {
     .json({ message: `Route ${req.originalUrl} not found` });
 });
 
-app.listen(process.env.PORT, () => {
-  console.clear();
-  100;
-  console.log(`Server is running on http://localhost:${process.env.PORT}`);
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
